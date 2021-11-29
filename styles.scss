@@ -1,0 +1,59 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background-color: lightblue;
+
+    .box{
+        height: 300px;
+        width: 300px;
+        background-color: wheat;
+        margin: 3em;
+    }
+}
+
+#menu{
+    position: absolute;
+    position: fixed;
+    top: 30px;
+    right: 60px;
+}
+
+.menu{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    transform: translateY(-100%);
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+
+    ul{
+        margin: 3em;
+
+        li{
+            margin: 2em;
+        }
+    }
+}
+
+#close{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
