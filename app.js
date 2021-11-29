@@ -5,8 +5,9 @@ menuButton.addEventListener('click', (e) => {
 })
 
 function menuDown() {
-    gsap.to('.menu', {duration: 1,
-    y: '0%'})
+    gsap.to('.menu', {duration: 0.75,
+    y: '0%',
+    ease: 'Power4.out'})
 }
 
 closeMenuButton.addEventListener('click', (e) => {
@@ -14,8 +15,9 @@ closeMenuButton.addEventListener('click', (e) => {
 })
 
 function menuUp() {
-    gsap.to('.menu', {duration: 1,
-    y: '-100%'})
+    gsap.to('.menu', {duration: 0.5,
+    y: '-100%',
+    })
 }
 
 console.log('ok')
